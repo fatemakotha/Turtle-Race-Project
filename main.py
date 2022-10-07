@@ -1,10 +1,12 @@
 from turtle import Turtle, Screen
 
-tim = Turtle()
+
 screen = Screen()
 screen.setup(width=500, height=400) #width = 500pixel, height = 400pixel
-screen.textinput(title="Make your bet", prompt="Which turtle do you think will win? Enter a color: ") #adds a popup window
+user_bet = screen.textinput(title="Make your bet", prompt="Which turtle do you think will win? Enter a color: ") #adds a popup window
 
+tim = Turtle()
+tim.goto(x=-230, y=-100) #takes x coordinate and y coordinate amd moves turtle to that position
 
 
 
